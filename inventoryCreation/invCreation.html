@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Albert+Sans:200,700,600" rel="stylesheet" />
+    <title>StoreIt - Create Inventory</title>
+    <link href="invStyles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main-content">
+        <h1>Create Inventory</h1>
+        <p class="welcome-text">Welcome to <span>StoreIt</span>! To get started, create your first Inventory</p>
+        
+        <div class="form-container">
+            <input type="text" placeholder="Inventory Name">
+            <select>
+                <option value="" disabled selected>Storage Category</option>
+                <option value="household">Household</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="tools">Tools</option>
+                <option value="books">Books</option>
+                <option value="other">Other</option>
+            </select>
+            <button>Create Inventory</button>
+        </div>
+    </div>
+    
+    <div class="logo-container">
+        <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#FFFFFF" d="M50,10 L90,30 L90,70 L50,90 L10,70 L10,30 Z M50,30 L30,40 L30,60 L50,70 L70,60 L70,40 Z" stroke="#FFFFFF" stroke-width="2"/>
+        </svg>
+        <div class="logo-text">StoreIt!</div>
+    </div>
+
+    <script src="invScript.js"></script>
+</body>
+</html>

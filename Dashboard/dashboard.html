@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>StoreIt! - Inventory Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Albert+Sans:300,600,500,400,200" rel="stylesheet">
+    <link href="dbStyles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="popup-overlay"></div>
+    <div class="container">
+        <div class="main-content">
+            <!-- Left Sidebar -->
+            <div class="sidebar">
+                <div class="dashboard">
+                    <img src="../dash.png" alt="Home" class="sidebar-icon">
+                    Dashboard
+                </div>
+                <div class="sidebar-option" id="scanner">
+                    <img src="../scanning.png" alt="Home" class="sidebar-icon" >
+                    Scanner
+                </div>
+                
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="logo">
+                <img src="/logo.png" alt="StoreIt! Logo">
+            </div>
+            
+            <div class="storage-capacity">
+                <div class="capacity-text">Storage Capacity</div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="capacity-percentage">45% / 100%</div>
+            </div>
+
+            <div class="user-profile">
+                <img src="../profile.jpg" alt="User" class="avatar">
+                <div class="user-info">
+                    <div class="user-name">Cliff Raycee B. Jabines</div>
+                    <div class="profile-text">Profile</div>
+                </div>
+            </div>
+            
+
+            <div class="content">
+                <!-- Inventories Section -->
+                <section class="inventories">
+                    <div class="section-header">
+                        <img src="../box.png" alt="StoreIt! Logo" class="logo-icon">
+                        <h2>Inventories</h2>
+                        <button class="inventory_buttons" id="sortInventoryButton">
+                            Sort Inventories
+                        </button> 
+                    </div>
+                    <div class="inventory-cards" id="inventoryCards"></div>
+                </section>
+
+                <!-- Item List Section -->
+                <section class="item-list">
+                    <div class="list-header">
+                        <h2>Item List</h2>
+                        <div class="list-controls">
+                            <div class="search-box">
+                                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                                <input type="text" id="searchInventory" placeholder="Search Inventory">
+                            </div>
+                            <div class="filter-qua">
+                                Filter by Quantity
+                                <svg width="21" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="items-table" id="itemsTable"></table>
+                </section>
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="dbScript.js"></script>
+</body>
+</html>

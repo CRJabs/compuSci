@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>StoreIt! - Create Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Albert+Sans:200,700,600" rel="stylesheet" />
+    <link href="regisPageStyles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-dark flex-center">
+      <div class="container">
+        <div class="relative bg-primary">
+          <div class="card">
+            <!-- Left side with image and logo -->
+            <div class="card-left">
+              <div class="image-container"></div>
+              <div class="logo-container">
+                <a href="../../index.html"><img
+                  class="logo-icon"
+                  alt="StoreIt! logo"
+                  src="/logo.png"
+                /></a>
+              </div>
+            </div>
+
+            <!-- Right side with form -->
+            <div class="form-container">
+              <h1 class="title">Create an Account</h1>
+
+              <div class="login-text">
+                <span>Already have an Account? </span>
+                <span class="login-link">Log in</span>
+              </div>
+
+              <form id="signupForm" class="signup-form">
+                <div class="name-inputs">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="First Name"
+                  />
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Last Name"
+                  />
+                </div>
+
+                <input
+                  type="email"
+                  class="input"
+                  placeholder="Email"
+                />
+
+                <input
+                  type="password"
+                  class="input"
+                  placeholder="Password"
+                />
+
+                <button type="submit" class="button primary full-width">
+                  Create account
+                </button>
+
+                <div class="separator">
+                  <div class="line"></div>
+                  <span>Or register with</span>
+                  <div class="line"></div>
+                </div>
+
+                <div class="social-buttons">
+                  <button type="button" class="button outline social-button">
+                    <img
+                      class="social-icon"
+                      alt="Google"
+                      src="/google.png"
+                    />
+                    <span>Google</span>
+                  </button>
+                  <button type="button" class="button outline social-button">
+                    <img
+                      class="social-icon"
+                      alt="Facebook"
+                      src="/facebook.png"
+                    />
+                    <span>Facebook</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="regisPageJS.js"></script>
+  </body>
+</html>
